@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles1.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python(Programming Language)</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#History"
+            >History</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Design_Philosophy"
+            >Design Philosophy</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Indentation">Indentation</a></li>
+        <li><a class="nav-link" href="#Statements_and_Control_flow">Statements and control flow</a></li>
+        <li>
+          <a class="nav-link" href="#Typing"
+            >Typing</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Arithmetic_Operations">Arithmetic Operations</a></li>
+        <li>
+          <a class="nav-link" href="#Programming_Examples">Programming Examples</a>
+        </li>
+        
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.
+          </p>
+
+          <p>
+            Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.
+          </p>
+          <ul>
+            <li>
+              Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991 as Python 0.9.0.
+            </li>
+            <li>
+              Python 2.0 was released in 2000 and introduced new features such as list comprehensions, cycle-detecting garbage collection, reference counting, and Unicode support. Python 3.0, released in 2008, was a major revision that is not completely backward-compatible with earlier versions. Python 2 was discontinued with version 2.7.18 in 2020.
+            
+            </li>
+            <li>Python consistently ranks as one of the most popular programming languages.</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="History">
+        <header>History</header>
+        <article>
+          <p>Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the ABC programming language, which was inspired by SETL, capable of exception handling and interfacing with the Amoeba operating system.</p>
+          
+
+          <ul>
+            <li> Its implementation began in December 1989.</li>
+            <li>
+             Python 2.0 was released on 16 October 2000, with many major new features.
+            </li>
+            <li>Python 3.0, released on 3 December 2008, with many of its major features backported to Python 2.6.x and 2.7.x. Releases of Python 3 include the 2to3 utility, which automates the translation of Python 2 code to Python 3</li>
+            <li>
+              In 2022, Python 3.10.4 and 3.9.12 were expedited and so were older releases including 3.8.13, and 3.7.13 because of many security issues. Python 3.9.13 is the latest 3.9 version, and from now on 3.9 (and older; 3.8 and 3.7) will only get security updates.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Design_Philosophy">
+        <header>Design Philosophy</header>
+        <article>
+          <p>
+            Python is a multi-paradigm programming language. Object-oriented programming and structured programming are fully supported, and many of its features support functional programming and aspect-oriented programming (including metaprogramming[61] and metaobjects [magic methods] ).[62] Many other paradigms are supported via extensions, including design by contract[63][64] and logic programming.
+          </p>
+
+          <p>
+            Python uses dynamic typing and a combination of reference counting and a cycle-detecting garbage collector for memory management.[66] It uses dynamic name resolution (late binding), which binds method and variable names during program execution.
+          </p>
+          <p>
+            Its core philosophy is summarized in the document The Zen of Python (PEP 20), which includes aphorisms such as:
+          </p>
+          <ul>
+            <li>Beautiful is better than ugly.</li>
+<li>Explicit is better than implicit.</li>
+<li>Simple is better than complex.</li>
+<li>Complex is better than complicated.</li>
+<li>Readability counts.</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Indentation">
+        <header>Indentation</header>
+        <article>
+          Python uses whitespace to delimit control flow blocks (following the off-side rule). Python borrows this feature from its predecessor ABC: instead of punctuation or keywords, it uses indentation to indicate the run of a block.
+          <code>
+            def foo(x):
+    if x == 0:
+        bar()
+    else:
+        baz(x)
+        foo(x - 1)
+          </code> 
+
+          Select the code in the pad and hit Ctrl+R to watch it unfold in your
+          browser!
+
+        </article>
+      </section>
+      <section class="main-section" id="Programming_Examples">
+        <header>Programming Examples</header>
+        <article>
+          <p>Hello World</p>
+          <code>
+            print('Hello, world!')
+          </code> 
+          <p>Program to calculate the factorial of a positive integer:</p>
+          <code>
+            n = int(input('Type a number, and its factorial will be printed: '))
+
+if n < 0:
+    raise ValueError('You must enter a non-negative integer')
+
+factorial = 1
+for i in range(2, n + 1):
+    factorial *= i
+
+print(factorial)
+          </code>
+          <p>Add Two Numbers</p>
+          <code>
+            num1 = 1.5
+num2 = 6.3
+
+
+sum = num1 + num2
+
+
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+          </code>
+          <code>num1 = 15
+num2 = 12
+ 
+# Adding two nos
+sum = num1 + num2
+ 
+# printing values
+print("Sum of {0} and {1} is {2}" .format(num1, num2, sum))</code>
+          <code>ef compound_interest(principle, rate, time):
+ 
+    # Calculates compound interest
+    Amount = principle * (pow((1 + rate / 100), time))
+    CI = Amount - principle
+    print("Compound interest is", CI)
+ 
+ 
+</code>
+          <code>def findArea(r):
+    PI = 3.142
+    return PI * (r*r);
+  
+# Driver method
+print("Area is %.6f" % findArea(5));</code>
+          
+
+        </article>
+      </section>
+      <section class="main-section" id="Statements_and_Control_flow">
+        <header>Statements and Control flow</header>
+        <p>
+         Python's statements include:
+        </p>
+        <ul>
+          <li>The assignment statement, using a single equals sign =</li>
+          <li>The if statement, which conditionally executes a block of code, along with else and elif (a contraction of else-if)</li>
+          <li>The for statement, which iterates over an iterable object, capturing each element to a local variable for use by the attached block</li>
+          <li>The while statement, which executes a block of code as long as its condition is true</li>
+          <li>The def statement, which defines a function or method</li>
+          <li>The break statement, which exits a loop</li>
+          <li>The continue statement, which skips the current iteration and continues with the next</li>
+          <li>The return statement, used to return a value from a function</li>
+          <li>The import statement, used to import modules whose functions or variables can be used in the current program</li>
+        </ul>
+        
+      </section>
+      <section class="main-section" id="Typing">
+        <header>Typing</header>
+        <article>
+          
+          <p>
+            Python uses duck typing and has typed objects but untyped variable names. Type constraints are not checked at compile time; rather, operations on an object may fail, signifying that it is not of a suitable type. Despite being dynamically-typed, Python is strongly-typed, forbidding operations that are not well-defined (for example, adding a number to a string) rather than silently attempting to make sense of them.
+          </p>
+          
+        </article>
+      </section>
+      <section class="main-section" id="Arithmetic_Operations">
+        <header>Arithmetic Operations</header>
+        <article>
+          <p>
+            Python has the usual symbols for arithmetic operators (+, -, *, /), the floor division operator // and the modulo operation % (where the remainder can be negative, e.g. 4 % -3 == -2). It also has ** for exponentiation, e.g. 5**3 == 125 and 9**0.5 == 3.0, and a matrix‑multiplication operator @ . These operators work like in traditional math; with the same precedence rules, the operators infix (+ and - can also be unary to represent positive and negative numbers respectively).
+          </p>
+          <p>
+            Python uses arbitrary-precision arithmetic for all integer operations. The Decimal type/class in the decimal module provides decimal floating-point numbers to a pre-defined arbitrary precision and several rounding modes. The Fraction class in the fractions module provides arbitrary precision for rational numbers.
+          </p>
+          <p>
+            Due to Python's extensive mathematics library, and the third-party library NumPy that further extends the native capabilities, it is frequently used as a scientific scripting language to aid in problems such as numerical data processing and manipulation.
+          </p>
+        </article>
+      </section>
+      
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a
+                href="https://en.wikipedia.org/wiki/Python_(programming_language)"
+                target="_blank"
+                >Wikipedia</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
